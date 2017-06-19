@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>local weather</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <style type="text/css">
+        table{
+            border: 1px solid black;
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<form id="form">
+<input type="text" value="" placeholder="输入查询城市">
+<button>提交</button></form>
+<table>
+    <caption><span id="city">深圳</span><span id="date_y">今天</span>天气</caption>
+
+    <thead>
+        <tr>
+            <th>项目</th>
+            <th>数据</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>温度</td>
+            <td id="temperature"></td>
+        </tr>
+        <tr>
+            <td>天气</td>
+            <td id="weather"></td>
+        </tr>
+        <tr>
+            <td>风向</td>
+            <td id="wind"></td>
+        </tr>
+        <tr>
+            <td>紫外线指数</td>
+            <td id="uv"></td>
+        </tr>
+        <tr>
+            <td>湿度</td>
+            <td id="humidity"></td>
+        </tr>
+        <tr>
+            <td>着衣建议</td>
+            <td id="dress"></td>
+        </tr>
+    </tbody>
+</table>
+<p>未来天气</p>
+<div id="future">
+
+</div>
+</body>
+</html>
